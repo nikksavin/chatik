@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
-import { Button } from 'components';
+import { Auth } from 'pages';
+
+
 
 function App() {
   return (
     <div className="wrapper">
-      hello word
-      
-      <Button  type="primary" size="large">this is btn</Button>
-      
+      <Auth/>
     </div>
   );
 }

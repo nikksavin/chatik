@@ -1,20 +1,17 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Button as BaseButton } from "antd";
 import classNames from 'classnames';
 
-import './Button.scss';
+import './Block.scss';
 
-const Button = props => ( 
-    <BaseButton {...props} className={classNames("button", props.className, {
-        "button--large" : props.size === "large"
-    })}  />
+const Block = ({children, className}) => ( 
+    
+    <div className={classNames("block", className)}>{children}</div>
+
 );
 
-
-
-Button.propTypes = {
+Block.propTypes = {
     className: PropTypes.string
 }
 
-export default Button;
+export default Block;
