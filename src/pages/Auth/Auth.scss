@@ -1,0 +1,30 @@
+body,
+#root,
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.auth {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  max-width: 480px;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  .block {
+    button {
+      width: 100%;
+    }
+  }
+
+  .auth__block {
+    p {
+      color: #878b8b;
+    }
+  }
+}
